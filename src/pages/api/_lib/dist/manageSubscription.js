@@ -58,12 +58,13 @@ function saveSubscription(subscriptionId, customerId, createAction) {
                         status: subscription.status,
                         price_id: subscription.items.data[0].price.id
                     };
+                    console.log(createAction);
                     if (!createAction) return [3 /*break*/, 4];
                     return [4 /*yield*/, fauna_1.fauna.query(faunadb_1.query.Create(faunadb_1.query.Collection('subscriptions'), { data: subscriptionData }))];
                 case 3:
                     _a.sent();
                     return [3 /*break*/, 6];
-                case 4: return [4 /*yield*/, fauna_1.fauna.query(faunadb_1.query.Replace(faunadb_1.query.Select('ref', faunadb_1.query.Get(faunadb_1.query.Match(faunadb_1.query.Index('subcription_by_id'), subscriptionId))), { data: subscriptionData }))];
+                case 4: return [4 /*yield*/, fauna_1.fauna.query(faunadb_1.query.Replace(faunadb_1.query.Select('ref', faunadb_1.query.Get(faunadb_1.query.Match(faunadb_1.query.Index('subscription_by_id'), subscriptionId))), { data: subscriptionData }))];
                 case 5:
                     _a.sent();
                     _a.label = 6;

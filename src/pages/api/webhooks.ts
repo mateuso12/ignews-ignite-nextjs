@@ -36,7 +36,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   let event: Stripe.Event;
 
   try {
-    event = stripe.webhooks.constructEvent(buf, secret, process.env.STRIPE_WEBHOOK_SECRET)
+    event = stripe.webhooks.constructEvent(
+      buf, 
+      secret, 
+      process.env.STRIPE_WEBHOOK_SECRET
+      )
   } catch (err) {
     return res.status(400).send(`Webhook error: ${err.message}`)
   }
@@ -46,7 +50,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   if(relevantEvents.has(type)) {
    try {
      switch (type) {
-      case 'customer.subscription.created':
       case 'customer.subscription.updated':
       case 'customer.subscription.deleted':
         const subscription = event.data.object as Stripe.Subscription;
@@ -78,7 +81,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   }
 
-  res.json({ok: true})
+  res.json({received: true})
 }else {
   res.setHeader('Allow', 'POST')
   res.status(405).end("Método não permitido")

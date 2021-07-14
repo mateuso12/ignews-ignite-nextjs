@@ -123,7 +123,6 @@ exports["default"] = (function (req, res) { return __awaiter(void 0, void 0, voi
                 _b.trys.push([2, 9, , 10]);
                 _a = type;
                 switch (_a) {
-                    case 'customer.subscription.created': return [3 /*break*/, 3];
                     case 'customer.subscription.updated': return [3 /*break*/, 3];
                     case 'customer.subscription.deleted': return [3 /*break*/, 3];
                     case 'checkout.session.completed': return [3 /*break*/, 5];
@@ -147,7 +146,7 @@ exports["default"] = (function (req, res) { return __awaiter(void 0, void 0, voi
                 err_1 = _b.sent();
                 return [2 /*return*/, res.json({ error: 'Webhook handler failed.' })];
             case 10:
-                res.json({ ok: true });
+                res.json({ received: true });
                 return [3 /*break*/, 12];
             case 11:
                 res.setHeader('Allow', 'POST');

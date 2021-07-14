@@ -31,7 +31,7 @@ export async function saveSubscription(
     status: subscription.status,
     price_id: subscription.items.data[0].price.id
   }
-
+  console.log(createAction)
   if (createAction) {
     await fauna.query(
       q.Create(
@@ -46,7 +46,7 @@ export async function saveSubscription(
           'ref',
           q.Get(
             q.Match(
-              q.Index('subcription_by_id'),
+              q.Index('subscription_by_id'),
               subscriptionId,
             )
           )
