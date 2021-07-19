@@ -77,9 +77,10 @@ $ yarn dev
 ## :framed_picture: Imagens ##
 
 <h1 align="center">
-    <img alt = "Web app" src = "https://github.com/mateuso12/ignews-ignite-nextjs/issues/1#issue-948067207" width = "500px" />
-    <img alt = "Web app" src = "" width = "500px" />
-    <img alt = "Web app" src = "" width = "500px" />
-    <img alt = "Web app" src = "" width = "500px" />
+    <img alt = "Web app" src = "https://user-images.githubusercontent.com/54694745/126233876-cbbfbd7b-2bc1-4135-9476-06f785ff1b3b.png" width = "500px" />
+    <img alt = "Web app" src = "https://user-images.githubusercontent.com/54694745/126233880-cbbc8b72-babe-4a55-9a5b-58fc4199143e.png" width = "500px" />
+    <img alt = "Web app" src = "https://user-images.githubusercontent.com/54694745/126233881-1ab39fb6-c44d-48a7-b21c-96627cfff40d.png" width = "500px" />
+    <img alt = "Web app" src = "https://user-images.githubusercontent.com/54694745/126233882-28a90f5f-daed-44f7-8ead-8c0c87783923.png" width = "500px" />
+  <img alt = "Web app" src = "https://user-images.githubusercontent.com/54694745/126233884-7722bd22-b6f6-47e6-a2cf-69078f90dafb.png" width = "500px" />
 </h1>
 
