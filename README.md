@@ -1,7 +1,7 @@
 <h1 align="center">
 
 
-<img src="" alt="rocketshoes" width="100px"/>
+<img src="https://github.com/mateuso12/ignews-ignite-nextjs/blob/main/public/images/avatar.svg" alt="ignews"width="100px"/>
 
 </h1>
 
