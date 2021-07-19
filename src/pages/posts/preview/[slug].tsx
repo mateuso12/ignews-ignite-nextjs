@@ -42,7 +42,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
-          <div className="continueReading">
+          <div className={styles.continueReading}>
             Deseja continuar lendo?
             <Link href="/">
             <a href="">Inscreva-se agora 🤗 </a>
@@ -61,9 +61,7 @@ export const getStaticPaths = () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  params,
-}) => {
+export const getStaticProps: GetStaticProps = async ({params}) => {
   const { slug } = params;
 
   const prismic = getPrismicClient();
