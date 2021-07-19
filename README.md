@@ -1,9 +1,4 @@
-<h1 align="center">
 
-
-<img src="https://github.com/mateuso12/ignews-ignite-nextjs/blob/main/public/images/avatar.svg" alt="ignews"width="100px"/>
-
-</h1>
 
 <p align="center">
   IGNEWS - Portal de notícias 📰🚀
