@@ -68,6 +68,7 @@ $ yarn dev
 
 # The server will initialize in the <http://localhost:3000>
 ```
+Você pode conferir o projeto rodando neste link: https://ignews-one-olive.vercel.app/
 
 ## :framed_picture: Imagens ##
 
